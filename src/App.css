@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
-
+.container {
+  width: 100%;
+  max-width: 100%;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -30,4 +33,69 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form-control-borderless {
+  border: 1px solid transparent;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: 1px solid transparent;
+  outline: none;
+  box-shadow: none;
+}
+.card-body{
+  padding: 0.5rem;
+}
+.searchBar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 5px;
+}
+.userRow{
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;  
+  justify-content: space-between;
+  align-items: center;
+}
+.userRow:last-child .btn {
+  padding: 16px 10px;
+  margin: 4px;
+}
+.userRow p{
+  padding: 8px;
+  margin-bottom: 0;
+  word-break: break-word;
+} 
+.gridElement{
+  margin-top: 80px;
+}
+.imgDiv{
+  padding: 4px;
+}
+.imgDiv img{
+  border-radius: 4px;
+  max-width: 100px;
+}
+.infoPopUp{
+  width: 100%;
+  position: fixed;
+  background: rgba(255,255,255,0.6);
+  height: 100vh;
+  z-index: 9999;
+  top: 0;
+}
+.infoPopUp .close{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: inline-block;
+}
+.additional .userRowContainer {
+  width: 80%;
+  margin: 80px auto;
 }

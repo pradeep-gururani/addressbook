@@ -1,0 +1,6 @@
+const constants ={
+    GET_USER_DATA_REQUEST: "GET_USER_DATA_REQUEST",
+    GET_USER_DATA_SUCCESS: "GET_USER_DATA_SUCCESS",
+    GET_USER_DATA_ERROR: "GET_USER_DATA_ERROR",
+}
+export default constants;
