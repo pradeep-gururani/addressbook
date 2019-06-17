@@ -56,6 +56,9 @@
   right: 0;
   top: 5px;
 }
+.userRowContainer{
+  margin-bottom: 10px;
+}
 .userRow{
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;  
@@ -71,6 +74,14 @@
   margin-bottom: 0;
   word-break: break-word;
 } 
+.userRowContainer .userRow p span{
+  display: block;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+
+}
 .gridElement{
   margin-top: 80px;
 }
@@ -84,7 +95,7 @@
 .infoPopUp{
   width: 100%;
   position: fixed;
-  background: rgba(255,255,255,0.6);
+  background: #fff;
   height: 100vh;
   z-index: 9999;
   top: 0;
@@ -94,8 +105,26 @@
   right: 10px;
   top: 10px;
   display: inline-block;
+  padding: 10px 20px;
+  background: red;
+  color: #fff;
 }
 .additional .userRowContainer {
   width: 80%;
   margin: 80px auto;
+}
+.rowHeader{
+  justify-content: space-around;
+  background: #c0c0c0;
+  color: #fff;
+  border-radius: 3px 3px 0 0;
+  padding: 10px 0;
+}
+.rowHeader p{
+  margin-bottom: 0;
+}
+.infoPopUp .userRow{
+  border-radius: 0 0 3px 3px;
+  padding: 20px 10px;
+  background: #fff;
 }

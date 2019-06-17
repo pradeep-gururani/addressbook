@@ -37,14 +37,20 @@ class userGridElement extends Component {
                           
                       ).map((data,i)=>(
                         <div key={i} className="col-12 col-md-10 col-lg-8 userRowContainer">
+                            {/* <div className="rowHeader d-flex">
+                                <p>first name</p>
+                                <p>last name</p>
+                                <p>username</p>  
+                                <p>email</p>                                
+                            </div> */}
                             <div className="d-flex userRow ">
                                 <div className="imgDiv">
                                     <img src={data.picture.thumbnail} />
                                 </div>
-                                <p>{data.name.first}</p>
-                                <p>{data.name.last}</p>
-                                <p>{data.login.username}</p>
-                                <p>{data.email}</p>
+                                <p><span>first name</span>{data.name.first}</p>
+                                <p><span>last name</span>{data.name.last}</p>
+                                <p><span>username</span>{data.login.username}</p>
+                                <p><span>email</span>{data.email}</p>
                                 <button className="btn btn-info"
                                     onClick={ ()=>{                                        
                                             this.showPopUp(data)
